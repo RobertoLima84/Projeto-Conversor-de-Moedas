@@ -6,11 +6,9 @@ function convertValues() {
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert") /* Valor em Real*/
     const currencyValueConverted = document.querySelector(".currency-value") /* Outras moedas */
 
-    
+    console.log(currencyselect.value)
     const dolarToday = 5.20
     const euroToday = 6.20
-
-
 
     if (currencyselect.value == "Dolar") { // Se o select estiver selecionado o valor de dolar, entre aqui
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
