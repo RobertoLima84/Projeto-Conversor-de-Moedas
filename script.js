@@ -10,7 +10,8 @@ function convertValues() {
     
     const dolarToday = 5.20
     const euroToday = 6.20
-    const LibraToday = 3.20
+    const LibraToday = 7.20
+    const bitcoinToday= 10000
 
     if (currencyselect.value == "Dolar") { // Se o select estiver selecionado o valor de dolar, entre aqui
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -28,7 +29,13 @@ function convertValues() {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-UK", {
             style: "currency",
             currency: "GBP"
-        }).format(inputCurrencyValue /euroToday)
+        }).format(inputCurrencyValue / LibraToday)
+    }
+    if (currencyselect.value == "Bitcoin") { // Se o select estiver selecionado o valor de dolar, entre aqui
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "BTC"
+        }).format(inputCurrencyValue / dolarToday)
     }
   
 
