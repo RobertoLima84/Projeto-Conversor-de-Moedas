@@ -38,9 +38,8 @@ function convertValues () {
 }
 
 
-
 function changeCurrency () {
-    const currencyName = document.getElementById("currency-name")
+    const currencyName = document.getElementsByClassName(".currency-name")
     const currencyImage = document.querySelector(".currency-img")
 
     console.log("trocou a moeda")
